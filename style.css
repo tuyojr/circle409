@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Dancing+Script:wght@500&family=Edu+VIC+WA+NT+Beginner&display=swap');
+
+* {
+    font-family: "Caveat", "Edu VIC WA NT Beginner", sans-serif;
+    font-size: x-large;
+}
+
+section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+header {
+    position: relative;
+    top: 0;
+    width: 100%;
+    padding: 0px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    color: black;
+    font-size: 30px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-decoration: none;
+    position: center;
+}
+
+
+.navigation ul {
+    float: right;
+    list-style: none;
+    margin-right: 200px;
+    position: relative;
+}
+
+.navigation ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.navigation ul li a {
+    color: black;
+    text-decoration: none;
+    line-height: 40px;
+    font-size: 22px;
+    padding: 8px 10px;
+}
+
+.navigation ul li a:hover {
+    color: rgb(250, 53, 53);
+    border-radius: 20px;
+    box-shadow: 0 0 3px black,
+        0 0 3px gray;
+}
+
+.navigation ul ul li a:hover {
+    color: rgb(250, 53, 53);
+    box-shadow: none;
+}
+
+.navigation ul ul {
+    position: absolute;
+    top: 40px;
+    opacity: 0;
+    visibility: hidden;
+    transition: top 0.5s ease;
+}
+
+.navigation ul li:hover>ul {
+    top: 40px;
+    opacity: 1;
+    visibility: visible;
+}
+
+.navigation ul ul li {
+    position: relative;
+    margin: 0px;
+    width: 300px;
+    float: none;
+    display: list-item;
+    border-bottom: 1px solid black;
+}
+
+.navigation ul ul li {
+    line-height: 30px;
+}
+
+.navigation ul ul ul li {
+    position: relative;
+    top: -36px;
+    left: 150px;
+    border-bottom: none;
+}
+
+.navigation ul ul ul li a {
+    font-size: 15px;
+}
+
+.log2 {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-image: url(./background2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.container2 {
+    max-width: 700px;
+    width: 100%;
+    background: none;
+    padding: 25px 30px;
+    border-radius: 5px;
+}
+
+.container2 .title {
+    font-size: 20px;
+    font-weight: 500;
+    position: relative;
+}
+
+.container2 form .user-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+}
+
+form .user-details .input-box {
+    margin-bottom: 15px;
+    width: calc(100% / 2 - 20px);
+}
+
+.user-details .input-box .details {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+#mtn_image, #glo_image, #etisalat_image, #airtel_image, #wrong_image{
+    width: 3%;
+    position: absolute;
+    margin-top: 30px;
+    left: 74%;
+}
+
+.hidden {
+    display: none;
+}
+
+.user-details .input-box input {
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid blanchedalmond;
+    padding-left: 15px;
+    font-size: 15px;
+    border-bottom-width: 2px;
+    transition: all 0.4s ease;
+}
+
+.user-details .input-box input:focus,
+.user-details .input-box input:valid {
+    border-color: purple;
+}
+
+#dropdown {
+    height: 55px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid blanchedalmond;
+    padding-left: 15px;
+    font-size: 15px;
+    border-bottom-width: 2px;
+    transition: all 0.4s ease;
+}
+
+.info-btn {
+    width: 100%;
+    height: 40px;
+    border: 1px solid;
+    border-radius: 25px;
+    /* background: rgb(78, 3, 175); */
+    background: none;
+    padding-top: 10px;
+    text-align: center;
+    font-size: 18px;
+    color: black;
+    text-decoration: none;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+}
+
+.info-btn:hover {
+    background-color: rgb(248, 111, 111);
+    color: rgb(4, 30, 41);
+    transition: all 0.5s ease;
+}
